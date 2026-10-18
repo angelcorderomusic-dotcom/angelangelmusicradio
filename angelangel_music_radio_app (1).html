@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#08172b">
+<title>AngelAngel Music Radio</title>
+<style>
+:root{--navy:#08172b;--blue:#123b69;--sky:#55c7ff;--gold:#ffd166;--white:#f7fbff;--muted:#b9c9dc}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--navy);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+a{color:inherit}
+.wrap{width:min(1080px,92%);margin:auto}
+header{padding:18px 0;border-bottom:1px solid #ffffff1c;background:#08172bf2}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;letter-spacing:.3px}
+.logo{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--sky),#8a7cff);color:#08172b;font-size:24px}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--muted);font-size:.94rem}
+.hero{padding:72px 0 58px;background:radial-gradient(ellipse at 80% 10%,#15528a 0,transparent 45%),linear-gradient(145deg,#08172b,#102b4b)}
+.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:2px;font-size:.78rem;font-weight:700}
+h1{font-size:clamp(2.5rem,7vw,5rem);line-height:1.02;margin:14px 0 18px;max-width:800px}
+h1 span{color:var(--sky)}
+.lead{max-width:650px;color:var(--muted);font-size:1.15rem}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:12px;text-decoration:none;font-weight:800;border:1px solid transparent}
+.primary{background:var(--gold);color:#171c28}
+.secondary{border-color:#ffffff50;background:#ffffff0a}
+.note{font-size:.88rem;color:var(--muted);margin-top:14px}
+section{padding:54px 0}
+.section-title{font-size:clamp(1.7rem,4vw,2.4rem);margin:0 0 8px}
+.section-copy{color:var(--muted);margin:0 0 24px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{padding:23px;border:1px solid #ffffff20;background:#ffffff08;border-radius:18px}
+.card .emoji{font-size:1.8rem}
+.card h3{margin:10px 0 6px}
+.card p{color:var(--muted);margin:0 0 14px}
+.card a{font-weight:700;color:var(--sky);text-decoration:none}
+.banner{padding:30px;border-radius:22px;background:linear-gradient(120deg,#123b69,#205b83);display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.banner p{margin:4px 0 0;color:#d7e7f8}
+footer{padding:25px 0;border-top:1px solid #ffffff1c;color:var(--muted);font-size:.9rem}
+footer .foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:720px){.cards{grid-template-columns:1fr}.hero{padding:52px 0 42px}nav{gap:12px}.banner{padding:23px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#" aria-label="AngelAngel Music Radio home">
+      <span class="logo" aria-hidden="true">♫</span>
+      <span>AngelAngel Music Radio</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#listen">Listen</a><a href="#music">My Music</a><a href="#community">Community</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="listen">
+    <div class="wrap">
+      <div class="eyebrow">Your music • Your station • Your community</div>
+      <h1>Turn up the music.<br><span>Feel the connection.</span></h1>
+      <p class="lead">Welcome to AngelAngel Music Radio — sharing music, independent artists, and good vibes with listeners everywhere.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://live365.com/station/AngelAngel-Music-Radio-a84915" target="_blank" rel="noopener noreferrer">▶ Listen Live</a>
+        <a class="btn secondary" href="https://angelangelmusic.com" target="_blank" rel="noopener noreferrer">Visit AngelAngel Music</a>
+      </div>
+      <p class="note">The Listen Live button opens the station on Live365.</p>
+    </div>
+  </section>
+  <section id="music">
+    <div class="wrap">
+      <h2 class="section-title">More than a radio station</h2>
+      <p class="section-copy">Explore the music and help us keep independent music moving.</p>
+      <div class="cards">
+        <article class="card">
+          <div class="emoji" aria-hidden="true">🎙️</div>
+          <h3>Listen Live</h3>
+          <p>Join the station for music and programming from AngelAngel Music Radio.</p>
+          <a href="https://live365.com/station/AngelAngel-Music-Radio-a84915" target="_blank" rel="noopener noreferrer">Open Live365 →</a>
+        </article>
+        <article class="card">
+          <div class="emoji" aria-hidden="true">🎵</div>
+          <h3>Discover My Music</h3>
+          <p>Visit AngelAngel's music website to explore songs, releases, and updates.</p>
+          <a href="https://angelangelmusic.com" target="_blank" rel="noopener noreferrer">Explore the music →</a>
+        </article>
+        <article class="card" id="community">
+          <div class="emoji" aria-hidden="true">🤝</div>
+          <h3>Community & Sponsors</h3>
+          <p>Interested in supporting independent music or learning about sponsorship?</p>
+          <a href="https://angelangelmusic.com" target="_blank" rel="noopener noreferrer">Contact through the artist website →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <div class="banner">
+        <div>
+          <h2 style="margin:0">Thanks for listening!</h2>
+          <p>Same passion for music, and always something new to discover.</p>
+        </div>
+        <a class="btn primary" href="https://live365.com/station/AngelAngel-Music-Radio-a84915" target="_blank" rel="noopener noreferrer">Listen Now ▶</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="year"></span> AngelAngel Music Radio</span>
+    <span>Music brings us together.</span>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
